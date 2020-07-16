@@ -9,11 +9,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, targetpos, speed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < maxheight)
+        if (transform.position.y < maxheight && Input.GetKey(KeyCode.UpArrow))
         {
             targetpos = new Vector2(transform.position.x, transform.position.y + yinc);
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > minheight)
+        else if (transform.position.y > minheight && Input.GetKey(KeyCode.DownArrow))
         {
             targetpos = new Vector2(transform.position.x, transform.position.y - yinc);
         }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     private Vector2 targetpos;
@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     public int health = 3;
     void Update()
     {
+        if(health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         transform.position = Vector2.MoveTowards(transform.position, targetpos, speed * Time.deltaTime);
         if (transform.position.y < maxheight && Input.GetKey(KeyCode.UpArrow))
         {

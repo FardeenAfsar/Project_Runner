@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: 596ae2cbc4766894ea0eab3ce0c79442
+guid: 83041309efacb6143afb6afcbafb8442
 TextureImporter:
   fileIDToRecycleName:
-    21300000: characters_0
+    21300000: Sprite_Enemy_0
+    21300002: Sprite_Enemy_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -64,7 +65,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,7 +76,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,13 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: characters_0
+      name: Sprite_Enemy_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 62
-        width: 24
-        height: 28
+        x: 0
+        y: 0
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,7 +100,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 819510ebd8e9e194ca0e517a22f4224f
+      spriteID: b1e5daa73872efa48819f65c04f9559f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4c771cf30f55d4abf5b5161e4b4c69
       vertices: []
       indices: 
       edges: []
@@ -107,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b520b943e186f7f45aa6657a302aa510
+    spriteID: 1b597239a8a42e6479adfe4f651dfb0b
     vertices: []
     indices: 
     edges: []

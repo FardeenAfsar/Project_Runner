@@ -5,8 +5,13 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public int damage = 1;
-    public float speed, Endpos = -18;
-    private void Update()
+    public float Endpos = -18;
+    private float speed;
+    void Start()
+    {
+        speed = GameObject.Find("Spawner").GetComponent<Spawner>().speed;
+    }
+    void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         if (transform.position.x < Endpos)

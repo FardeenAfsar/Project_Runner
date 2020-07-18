@@ -7,6 +7,11 @@ public class Player : MonoBehaviour
     private Vector2 targetpos;
     public float yinc, speed, minheight, maxheight;
     public int health = 3;
+    public float pos_x, pos_y;
+    void Start()
+    {
+        targetpos = new Vector2(pos_x,pos_y);    
+    }
     void Update()
     {
         if(health <= 0)

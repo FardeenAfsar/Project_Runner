@@ -240,19 +240,6 @@ MonoBehaviour:
   - {fileID: 3340893016621697419, guid: 07afb182396cd734ca4ebfe89d43751c, type: 3}
   - {fileID: 1960769666976586167, guid: b6328d6f40042b94eb449f8aee86e21d, type: 3}
   - {fileID: 4409595055220083595, guid: 222453b5bb3ae924eb435c692764f62a, type: 3}
-  - {fileID: 4409595055220083595, guid: aed213454a4462543913d3c442f0e0ff, type: 3}
-  - {fileID: 4409595055220083595, guid: 12d9b0c592c6a754da4c58687b3e4e59, type: 3}
-  - {fileID: 4409595055220083595, guid: c7ac6d80d9ade734b9cd2b72c6408827, type: 3}
-  - {fileID: 4409595055220083595, guid: 3e88a8a825e55e643a86045963b32238, type: 3}
-  - {fileID: 4409595055220083595, guid: e7488305ee76a2f44b2517f83616ba9f, type: 3}
-  - {fileID: 4409595055220083595, guid: e8d4a35a00a510b44a42c1d57f381adf, type: 3}
-  - {fileID: 4409595055220083595, guid: 8969a72b5e5ec5947bc8e2c2838d1ca9, type: 3}
-  - {fileID: 4409595055220083595, guid: 09da9678367855b488709ad139d48422, type: 3}
-  - {fileID: 4409595055220083595, guid: 544d73f0eaf696d4ba823ebb8da2bd13, type: 3}
-  - {fileID: 4409595055220083595, guid: a08a4a5863df4e341bae05f3cfd6149e, type: 3}
-  - {fileID: 4409595055220083595, guid: c0b8b74dc7a5f014cb1ce303ae0143b6, type: 3}
-  - {fileID: 4409595055220083595, guid: fd16f039495f94b40a440e806db4afda, type: 3}
-  - {fileID: 4409595055220083595, guid: 2d8d765b545370747b2399d09fbcd44c, type: 3}
   spawn_time: 1.5
   inc_time: 0.05
   inc_limit: 0.8
@@ -264,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64741849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: -0.20494767}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1968,8 +1955,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842839030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.96, y: -1.8, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: -4, y: -1.65, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1986,11 +1973,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8d6fa141c72af40bee707eb8acdd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yinc: 0.25
-  speed: 100
-  minheight: -3
-  maxheight: 3
+  yinc: 2.4
+  speed: 50
+  minheight: -4.2
+  maxheight: 0.6
   health: 3
+  pos_x: -4
+  pos_y: -1.8
 --- !u!50 &842839035
 Rigidbody2D:
   serializedVersion: 4

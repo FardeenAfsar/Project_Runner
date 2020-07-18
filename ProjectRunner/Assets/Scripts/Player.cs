@@ -19,11 +19,11 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         transform.position = Vector2.MoveTowards(transform.position, targetpos, speed * Time.deltaTime);
-        if (transform.position.y < maxheight && Input.GetKey(KeyCode.UpArrow))
+        if (transform.position.y < maxheight && Input.GetKeyDown(KeyCode.UpArrow))
         {
             targetpos = new Vector2(transform.position.x, transform.position.y + yinc);
         }
-        else if (transform.position.y > minheight && Input.GetKey(KeyCode.DownArrow))
+        else if (transform.position.y > minheight && Input.GetKeyDown(KeyCode.DownArrow))
         {
             targetpos = new Vector2(transform.position.x, transform.position.y - yinc);
         }

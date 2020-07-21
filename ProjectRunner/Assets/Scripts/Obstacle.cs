@@ -6,13 +6,11 @@ public class Obstacle : MonoBehaviour
 {
     public int damage = 1;
     public float Endpos = -18;
-    private float speed;
-    void Start()
+    private static float speed;
+    
+    void FixedUpdate()
     {
         speed = GameObject.Find("Spawner").GetComponent<Spawner>().speed;
-    }
-    void Update()
-    {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         if (transform.position.x < Endpos)
         {

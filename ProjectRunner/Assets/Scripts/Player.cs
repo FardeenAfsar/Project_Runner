@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public int health = 1;
     public float pos_x, pos_y;
     public GameObject effect;
+    public Swipe swipecontrols;
     void Start()    
     {
         targetpos = new Vector2(pos_x,pos_y);
@@ -20,13 +21,13 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         transform.position = Vector2.MoveTowards(transform.position, targetpos, speed * Time.deltaTime);
-        if (transform.position.y < maxheight && Input.GetKeyDown(KeyCode.UpArrow))
+        if (transform.position.y < maxheight && swipecontrols.SwipeUp)
         {
             GameObject eff1 = Instantiate(effect, transform.position, Quaternion.identity);
             targetpos = new Vector2(transform.position.x, transform.position.y + yinc);
             Destroy(eff1, 1.5f);
         }
-        else if (transform.position.y > minheight && Input.GetKeyDown(KeyCode.DownArrow))
+        else if (transform.position.y > minheight && swipecontrols.SwipeDown)
         {
             GameObject eff2 = Instantiate(effect, transform.position, Quaternion.identity);
             targetpos = new Vector2(transform.position.x, transform.position.y - yinc);

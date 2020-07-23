@@ -1937,7 +1937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &842839031
 Animator:
   serializedVersion: 3
@@ -2035,7 +2035,7 @@ MonoBehaviour:
   speed: 50
   minheight: -4.2
   maxheight: 0.6
-  health: 3
+  health: 1
   pos_x: -4
   pos_y: -1.8
   effect: {fileID: 6817475564946203079, guid: 4b60c8b2df6eb5b48b67f757e0cadaba, type: 3}

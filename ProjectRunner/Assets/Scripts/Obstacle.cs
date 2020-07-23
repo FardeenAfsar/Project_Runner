@@ -8,7 +8,7 @@ public class Obstacle : MonoBehaviour
     public float Endpos = -18;
     private static float speed;
     
-    void FixedUpdate()
+    void Update()
     {
         speed = GameObject.Find("Spawner").GetComponent<Spawner>().speed;
         transform.Translate(Vector2.left * speed * Time.deltaTime);

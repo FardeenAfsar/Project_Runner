@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     private Vector2 targetpos;
     public float yinc, speed, minheight, maxheight;
-    public int health = 3;
+    public int health = 1;
     public float pos_x, pos_y;
     void Start()
     {
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     {
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         transform.position = Vector2.MoveTowards(transform.position, targetpos, speed * Time.deltaTime);
         if (transform.position.y < maxheight && Input.GetKeyDown(KeyCode.UpArrow))

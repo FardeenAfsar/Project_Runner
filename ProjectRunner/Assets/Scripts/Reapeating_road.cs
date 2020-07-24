@@ -6,7 +6,7 @@ public class Reapeating_road : MonoBehaviour
 {
     public float speed, end_x, start_x, sp_inc, speed_lim;
     private float time_sp;
-    void FixedUpdate()
+    void Update()
     {
         time_sp = GameObject.Find("Spawner").GetComponent<Spawner>().time_spawn;
         if (time_sp <= 0 && speed < speed_lim)

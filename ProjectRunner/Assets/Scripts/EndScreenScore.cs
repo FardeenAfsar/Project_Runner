@@ -10,7 +10,7 @@ public class EndScreenScore : MonoBehaviour
     {
         bscore = GameObject.FindGameObjectWithTag("scoresys").GetComponent<TextMeshProUGUI>();
         curscore = GameObject.FindGameObjectWithTag("scoresys2").GetComponent<TextMeshProUGUI>();
-        bscore.text = Score.hscore.ToString("0");
+        bscore.text = PlayerPrefs.GetFloat("hscore").ToString("0");
         curscore.text = Score.cscore.ToString("0");
     }
 }

@@ -2041,6 +2041,7 @@ MonoBehaviour:
   pos_y: -1.8
   effect: {fileID: 6817475564946203079, guid: 4b60c8b2df6eb5b48b67f757e0cadaba, type: 3}
   swipecontrols: {fileID: 842839037}
+  BGsound: {fileID: 2391510214094004556, guid: ab5e725d2f75457478891f648bc162a3, type: 3}
 --- !u!50 &842839035
 Rigidbody2D:
   serializedVersion: 4

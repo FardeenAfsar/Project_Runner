@@ -10,9 +10,11 @@ public class Player : MonoBehaviour
     public float pos_x, pos_y;
     public GameObject effect;
     public Swipe swipecontrols;
+    public GameObject BGsound;
     void Start()    
     {
         targetpos = new Vector2(pos_x,pos_y);
+        Instantiate(BGsound, transform.position, Quaternion.identity);
     }
     void Update()
     {

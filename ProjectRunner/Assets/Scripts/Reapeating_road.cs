@@ -12,7 +12,7 @@ public class Reapeating_road : MonoBehaviour
         if (time_sp <= 0 && speed < speed_lim)
         {
             speed += sp_inc;
-        }
+        }   
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         if (transform.position.x <= end_x)
         {
